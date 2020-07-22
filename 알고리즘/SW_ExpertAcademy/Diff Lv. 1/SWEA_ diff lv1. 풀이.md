@@ -2,7 +2,7 @@
 
 
 
-##  1545번
+##  1545번_[거꾸로 출력해 보아요](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 num=int(input())
@@ -14,7 +14,7 @@ for i in num:
 
 
 
-## 1933 번
+## 1933번_[간단한 N 의 약수](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 a=int(input())
@@ -28,7 +28,7 @@ for i in v:
 
 
 
-## 1936 번
+## 1936번_[1대1 가위바위보](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 a,b=list(map(int,input().split()))
@@ -50,7 +50,7 @@ else:
 
 
 
-## 1938 번
+## 1938번_ [아주 간단한 계산기](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 import math
@@ -68,7 +68,7 @@ cal(x,y)
 
 
 
-## 2019 번
+## 2019번_[더블더블](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 
@@ -82,7 +82,7 @@ for i in v:
 
 
 
-## 2025 번
+## 2025 번_[N줄덧셈](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 a=int(input())
@@ -94,7 +94,7 @@ print(ans)
 
 
 
-## 2027 번
+## 2027 번_[대각선 출력하기](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 print('#++++\n+#+++\n++#++\n+++#+\n++++#')
@@ -102,7 +102,7 @@ print('#++++\n+#+++\n++#++\n+++#+\n++++#')
 
 
 
-## 2029 번
+## 2029 번_[몫과 나머지 출력하기](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 
@@ -116,7 +116,7 @@ for i in list(range(1,n+1)):
 
 
 
-## 2043 번
+## 2043 번_[서랍의 비밀번호](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 p,k=list(map(int, input().split()))
@@ -126,7 +126,7 @@ print(((abs(p-k)//100)*100) + (((abs(p-k)%100)//10)*10) + ((abs(p-k)%100)%10) + 
 
 
 
-## 2046 번
+## 2046 번_[스탬프 찍기](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 
@@ -136,7 +136,7 @@ print('#'*a)
 
 
 
-## 2047 번
+## 2047 번_[신문 헤드라인](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 a=input()
@@ -145,7 +145,7 @@ print(a.upper())
 
 
 
-## 2050 번
+## 2050 번_[알파벳을 숫자로 변환](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 txt=input()
@@ -155,7 +155,7 @@ for i in list(range(0,len(txt))):
 
 
 
-## 2056 번
+## 2056 번_[연월일 달력](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 m=int(input())
@@ -173,14 +173,14 @@ for i in list(range(1,m+1)):
 
 
 
-## 2058 번
+## 2058 번_[자릿수 더하기](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 n=int(input())
 print((n//1000)+((n%1000)//100)+(((n%1000)%100)//10)+(n%10))
 ```
 
-## 2063 번
+## 2063 번_[중간값 찾기](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 
@@ -191,7 +191,7 @@ print(sorted(v)[(n//2)])
 
 
 
-## 2068 번
+## 2068 번_[최대수 구하기](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 n=int(input())
@@ -205,7 +205,7 @@ for i in list(range(1,n+1)):
 
 
 
-## 2070 번
+## 2070 번_[큰 놈, 작은 놈, 같은 놈](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 n=int(input())
@@ -221,7 +221,7 @@ for i in list(range(1,n+1)):
 
 
 
-## 2071 번
+## 2071 번_[평균값 구하기](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 n=int(input())
@@ -230,7 +230,7 @@ for i in list(range(1,n+1)):
     print(f'#{i} {int(round((sum(v)/len(v))))}')
 ```
 
-## 2072 번
+## 2072 번_[홀수만 더하기](https://swexpertacademy.com/main/userpage/code/userSubmitProblem.do?userId=AXMOQ3u61tMDFAWv#none)
 
 ```python
 
