@@ -11,6 +11,9 @@ def duplicated_letters(word):
         if word.count(i)>1:
             dist.append(i)
     return list(set(dist))
+
+#def duplicated_letters(word):
+#    return list({char for char in word if word.count(char)>=2})
 ```
 
 
@@ -28,6 +31,15 @@ def low_and_up(word):
         else:
             new_word+=word[i].upper()
     return new_word
+
+#def low_and_up(word):
+#    new_word=''
+#    for idx,char in enumerate(word):
+#        if idx %2:
+#            new_word+=char.upper()
+#        else:
+#            new_word+=char.lower()
+#    return new_word
 ```
 
 
