@@ -24,11 +24,9 @@ get_dict_avg({
 
 ```python
 def count_blood(blood_list):
-    cnt=[]
-    for i in set(blood_list):
-        cnt.append(blood_list.count(i))
     ans={}
-    ans.update(zip(list(set(blood_list)),cnt))
+    for blood in blood_list:
+        ans[blood]=ans.get(blood,0)+1
     return ans
 
 count_blood([
