@@ -26,7 +26,7 @@
 ## 3번. Hyper Link
 
 ```html
-<a href="https://ssagy.com">
+<a href="https://ssafy.com">
     <img src="../image/my_photo.png" alt="ssafy"></a>
 
 ```
