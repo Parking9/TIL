@@ -1,3 +1,8 @@
+# 0813 Practice
+
+## Responsive Web
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,3 +106,30 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
+
+```
+
+
+
+```css
+/* 아래에 코드를 작성하시오. */
+
+body {
+    height: 1000px;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.section {
+    height: 600px;
+    background-image: url(./images/main.png);
+    background-position: center;
+    background-size: cover;
+}
+```
+
+
+
+
+
+![](practice/result.JPG)
