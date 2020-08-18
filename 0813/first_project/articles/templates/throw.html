@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>This is throw page</h1>
-    <form action="/catch/" method="GET">
+    <form action="{% url 'catch' %}" method="GET">
       <label for="name"> 데이터입력 : </label>
       <input type="text" id="name" name="name">
       <input type="submit">

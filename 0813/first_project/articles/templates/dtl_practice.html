@@ -32,5 +32,46 @@
     {% else %}
       <p>길이가 10보다 작네요.</p>
     {% endif %}
+    <hr>
+    <h2>4. lorem ipsum</h2>
+    {% lorem %}
+    <hr>
+    {% lorem 3 %}
+    <hr>
+    {% lorem 3 w random %}
+    <hr>
+    {% lorem 3 p %}
+    <hr>
+    <h2>5. truncate </h2>
+    <p>{{ sentence|truncatechars:5 }}</p>
+    <p>{{ sentence|truncatewords:3}}</p>
+    <hr>
+    <h2>6. 글자 관련 필터</h2>
+    <p>{{'abc'|length}}</p>
+    <p>{{'abc'|upper}}</p>
+    <p>{{'ABC'|lower}}</p>
+    <p>{{'my name is zzzi'|title}}</p>
+    <p>{{'my name is zzzi'|capfirst}}</p>
+    <br>
+    <h2>7. 연산 관련 </h2>
+    <p>{{4|add:6}}</p>
+    <br>
+    <h2>8. 날짜표현</h2>
+    <p>{{ datetimenow }}</p>
+    <br>
+    {% now "DATETIME_FORMAT" %}
+    {% now "SHORT_DATE_FORMAT" %}
+    <br>
+    {% now "DATE_FORMAT" %}
+    {% now "SHORT_DATETIME_FORMAT" %}
+    <hr>
+    {% now "Y년 m월 d일 D"%}
+    <hr>
+    {% now "Y" as current_year %} <br>
+    <b>{{current_year}}</b>
+    <hr>
+
+    {{datetime|date:"Y년 m월 d일"}} <br>
+    {{ datetimenow|date:"SHORT_DATE_FORMAT"}}
 </body>
 </html>

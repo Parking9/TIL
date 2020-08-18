@@ -14,17 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from articles import views
+from django.urls import path, include
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/<str:name>/', views.hello),#variable routing
-    path('index/', views.index),
-    path('dinner/', views.dinner),
-    path('dtl-practice/', views.dtl_practice),
-    path('throw/', views.throw),
-    path('catch/', views.catch),
-    path('hw/', views.hw),
-    path('lotto/',views.lotto),
+    # articles/로 시작하는 URL 요청은 ariticles 앱의 url.py에서 처리하게 위임.
+    path('articles/', include('articles.urls')),
+    # articles 앱의 URL 설정
+    path('pages/', include('pages.urls')),
+
 ]
