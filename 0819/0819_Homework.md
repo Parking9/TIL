@@ -2,13 +2,21 @@
 
 ## 1. Model 반영하기
 
-- makemigration
+- python manage.py makemigrations
 
 model을 변경한 것에 기반한 새로운 마이그레이션을 만들 때 사용
 
-- migrate
+- python manage.py showmigrations
+
+migration이 DB에 반영이 됐는지 확인하는 명령어
+
+- python manage.py migrate
 
 마이그레이션을 DB에 반영하기 위해 사용
+
+- python manage.py sqlmigrate
+
+DB에 작동되는 SQL문을 확인할 때 쓰는 명령어
 
 
 
