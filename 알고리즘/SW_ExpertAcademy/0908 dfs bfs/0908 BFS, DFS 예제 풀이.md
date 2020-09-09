@@ -199,3 +199,78 @@ for tc in range(1, T+1):
 
 
 
+<hr>
+
+
+
+## 작업순서
+
+```python
+for tc in range(1, 11):
+    V, E = map(int, input().split())
+    line = list(map(int, input().split()))
+    arr = [[0]*(V+1) for _ in range(V+1)]
+    v = [0]*(V+1)
+    Q = []
+    for i in range(E):
+        arr[line[2*i]][line[2*i+1]] = 1
+    tarr = [list(x) for x in zip(*arr)]
+    ans = []
+    for i in range(1, V+1):
+        if 1 not in tarr[i]:
+            Q.append(i)
+            v[i]=1
+        while Q:
+            w = Q.pop(0)
+            for j in range(1, V+1):
+                if arr[w][j]==1 and tarr[j].count(1) >1:
+                    tarr[j][w]=0
+                elif arr[w][j] == 1 and v[j] == 0:
+                    Q.append(j)
+                    v[j] = 1
+            ans.append(w)
+    print(f'#{tc}', end=' ')
+    for anns in ans:
+        print(int(anns), end=' ')
+    print()
+```
+
+
+
+<hr>
+
+## 요리사
+
+```python
+T=int(input())
+for tc in range(1,T+1):
+    N=int(input())
+    arr=[list(map(int,input().split())) for _ in range(N)]
+    v=list(range(N))
+    v1=len(v)
+    minv=999999
+    ans=[]
+    for i in range(1<<v1):
+        ans2=[]
+        for j in range(v1):
+            if i & (1<<j):
+                ans2.append(v[j])
+        if len(ans2) == v1//2:
+            ans.append(ans2)
+    for k in ans:
+        sum1=0
+        sum2=0
+        back_k=list(set(v)-set(k))
+        for k2 in k:
+            for k3 in list(set(k)-set([k2])):
+                sum1+=arr[k2][k3]
+        for r1 in back_k:
+            for r2 in list(set(back_k)-set([r1])):
+                sum2+=arr[r1][r2]
+        if abs(sum1-sum2) < minv:
+            minv=abs(sum2-sum1)
+    print(f'#{tc} {minv}')
+```
+
+
+
