@@ -69,3 +69,26 @@ class ArticleSerializer(serializers.ModelSerializer):
 
 
 
+## articles list
+
+![](img/img1.JPG)
+
+## articles create
+
+![](img/img2.JPG)
+
+
+
+## articles detail
+
+![](img/img3.JPG)
+
+## articles update
+
+![](img/img4.JPG)
+
+
+
+## articles delete
+
+![](img/img5.JPG)
