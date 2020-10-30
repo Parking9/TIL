@@ -66,10 +66,10 @@ def check(st):
 T=int(input())
 for tc in range(1,T+1):
     N, M = map(int, input().split())
+    arr=[input() for _ in range(N)]
     now=[]
-    for _ in range(N):
-        ipt=input()
-        if ipt not in now and ipt != '0'*M:
+    for ar in range(0,N,5):
+        if ar not in now and ar != '0'*M:
             now.append(ipt)
 
     lennow=len(now)
@@ -85,22 +85,6 @@ for tc in range(1,T+1):
             if i =='':
                 break
             for _ in range(8):
-                cnt=[0,0,0,0]
-                # for j in i:
-                #     if j == '1':
-                #         cnt[0]+=1
-                #     else:
-                #         break
-                # for j2 in i[cnt[0]:]:
-                #     if j2 == '0':
-                #         cnt[1]+=1
-                #     else:
-                #         break
-                # for j3 in i[cnt[0]+cnt[1]:]:
-                #     if j3 == '1':
-                #         cnt[2]+=1
-                #     else:
-                #         break
                 while i[0] == '1':
                     cnt[0] += 1
                     i = i[1:]
