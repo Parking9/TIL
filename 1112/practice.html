@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Cat Image</h1>
     <div id='app'>
@@ -17,23 +19,25 @@
     <script>
         const CATAPI = 'https://api.thecatapi.com/v1/images/search'
         const vm = new Vue({
-            el : '#app',
-            data:{
-                imgSrc:''
+            el: '#app',
+            data: {
+                imgSrc: ''
             },
-            methods:{
-                onClick : function(){
+            methods: {
+                onClick: function () {
                     axios.get(CATAPI)
                         .then(res => {
-                            this.imgSrc=res.data[0].url
+                            this.imgSrc = res.data[0].url
                         })
                         .catch(err => console.log(err))
                 }
             },
-            created : function(){
+
+            created: function () {
                 this.onClick()
             }
         })
     </script>
 </body>
+
 </html>
