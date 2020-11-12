@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cat Image</h1>
+    <div id='app'>
+        <button @click='onClick'>고양이</button>
+        <hr>
+        <img :src="imgSrc" alt="" style='height: 50vh; width: 50vw;'>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const CATAPI = 'https://api.thecatapi.com/v1/images/search'
+        const vm = new Vue({
+            el : '#app',
+            data:{
+                imgSrc:''
+            },
+            methods:{
+                onClick : function(){
+                    axios.get(CATAPI)
+                        .then(res => {
+                            this.imgSrc=res.data[0].url
+                        })
+                        .catch(err => console.log(err))
+                }
+            },
+            created : function(){
+                this.onClick()
+            }
+        })
+    </script>
+</body>
+</html>
